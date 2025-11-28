@@ -35,5 +35,4 @@ async function loadProjects() {
     console.error("Error loading projects:", e);
   }
 }
-
 loadProjects();
