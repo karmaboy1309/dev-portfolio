@@ -1,0 +1,90 @@
+/* ----------- BASIC RESET ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----------- THEME SUPPORT ----------- */
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --card-bg: #f4f4f4;
+}
+
+.dark {
+  --bg: #111;
+  --text: #f9f9f9;
+  --card-bg: #222;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+  padding-bottom: 50px;
+}
+
+/* ----------- NAVBAR ----------- */
+.site-header {
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* ----------- HERO SECTION ----------- */
+#hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* ----------- PROJECT GRID ----------- */
+#projects {
+  padding: 30px 20px;
+}
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 600px) {
+  #hero h1 {
+    font-size: 28px;
+  }
+}
