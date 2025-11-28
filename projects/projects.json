@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "My personal developer portfolio made with HTML/CSS/JS."
+  },
+  {
+    "title": "Mini Dashboard",
+    "description": "Dashboard UI with responsive charts."
+  },
+  {
+    "title": "UI Components",
+    "description": "Reusable cards, buttons, modals for frontend practice."
+  }
+]
