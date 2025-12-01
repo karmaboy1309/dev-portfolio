@@ -81,5 +81,6 @@ function eraseEffect() {
 
 typeEffect();
 
+
 // ---------- HERO FADE-IN ----------
 document.querySelector("#hero").classList.add("fade-in");
