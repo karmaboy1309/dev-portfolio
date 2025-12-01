@@ -45,3 +45,41 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             .scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// ---------- HERO TYPEWRITER ----------
+const roles = [
+  "Frontend Developer",
+  "UI Designer",
+  "Web Developer",
+  "Creative Coder"
+];
+
+let index = 0;
+let charIndex = 0;
+const typeEl = document.querySelector(".typewriter");
+
+function typeEffect() {
+  if (charIndex < roles[index].length) {
+    typeEl.textContent += roles[index].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeEffect, 100);
+  } else {
+    setTimeout(eraseEffect, 1200);
+  }
+}
+
+function eraseEffect() {
+  if (charIndex > 0) {
+    typeEl.textContent = roles[index].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseEffect, 60);
+  } else {
+    index = (index + 1) % roles.length;
+    setTimeout(typeEffect, 400);
+  }
+}
+
+typeEffect();
+
+// ---------- HERO FADE-IN ----------
+document.querySelector("#hero").classList.add("fade-in");
