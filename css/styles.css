@@ -6,6 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 /* ----------- THEME SUPPORT ----------- */
 :root {
   --bg: #ffffff;
@@ -25,6 +26,7 @@ body {
   transition: all 0.3s ease;
   padding-bottom: 50px;
 }
+
 
 /* ----------- NAVBAR ----------- */
 .site-header {
