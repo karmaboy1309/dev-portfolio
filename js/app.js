@@ -13,6 +13,7 @@ if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
 }
 
+
 // ------------ LOAD PROJECTS ------------
 async function loadProjects() {
   const projectGrid = document.getElementById("project-grid");
@@ -54,6 +55,7 @@ const roles = [
   "Creative Coder"
 ];
 
+
 let index = 0;
 let charIndex = 0;
 const typeEl = document.querySelector(".typewriter");
@@ -68,6 +70,7 @@ function typeEffect() {
   }
 }
 
+
 function eraseEffect() {
   if (charIndex > 0) {
     typeEl.textContent = roles[index].substring(0, charIndex - 1);
@@ -78,6 +81,7 @@ function eraseEffect() {
     setTimeout(typeEffect, 400);
   }
 }
+
 
 typeEffect();
 
