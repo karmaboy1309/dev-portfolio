@@ -14,11 +14,13 @@
   --card-bg: #f4f4f4;
 }
 
+
 .dark {
   --bg: #111;
   --text: #f9f9f9;
   --card-bg: #222;
 }
+
 
 body {
   background: var(--bg);
@@ -26,7 +28,6 @@ body {
   transition: all 0.3s ease;
   padding-bottom: 50px;
 }
-
 
 /* ----------- NAVBAR ----------- */
 .site-header {
