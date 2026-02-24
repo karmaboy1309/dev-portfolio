@@ -6,7 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 /* ----------- THEME SUPPORT ----------- */
 :root {
   --bg: #ffffff;
@@ -14,13 +13,11 @@
   --card-bg: #f4f4f4;
 }
 
-
 .dark {
   --bg: #111;
   --text: #f9f9f9;
   --card-bg: #222;
 }
-
 
 body {
   background: var(--bg);
@@ -176,3 +173,5 @@ body {
     padding: 10px 24px;
   }
 }
+
+
